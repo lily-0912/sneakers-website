@@ -1,0 +1,18 @@
+@use "../../global/forwards" as *;
+
+.l-footer{
+  background-color: $color__sub;
+  padding: 10px 0 7px;
+}
+
+.copy-right{
+  text-align: center;
+  font-size: $font-size__copy-right;
+  color: $color__sub-text;
+}
+
+@include mq("sp"){
+  .copy-right{
+    font-size: $font-size__sp-copy-right;
+  }
+}

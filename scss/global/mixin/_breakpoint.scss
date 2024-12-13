@@ -1,0 +1,14 @@
+/*----------------------------------------------------------*/
+// メディアクエリ設定
+/*----------------------------------------------------------*/
+$breakpoints: (
+    "sp": "screen and (max-width: 900px)",
+    "pc": "screen and (min-width: 1024px)",
+);
+
+// mixinを定義する（初期値はsp）
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}

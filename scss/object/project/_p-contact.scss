@@ -1,0 +1,81 @@
+@use "../../global/forwards" as *;
+
+.l-contact{
+  padding: 50px 0;
+  background-color: $color__sub;
+  color: $color__sub-text;
+}
+
+.l-contact .wrapper{
+  max-width: 1210px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-contact__text-area{
+  width: 43.4%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.l-contact__form-area{
+  width: 44.9%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.l-contact__content{
+  display: flex;
+  flex-direction: column;
+}
+
+.l-contact__input{
+  padding: 10px;
+  background-color: $color__main;
+  height: 3rem;
+  color: $color__main-text;
+}
+
+.l-contact__textarea{
+  padding: 6px 10px;
+  background-color: $color__main;
+  height: 4.7rem;
+  color: $color__main-text;
+}
+
+.l-contact__button{
+  width: 200px;
+  text-align: center;
+  padding: 12px 0;
+  border: 1px solid $color__main;
+}
+
+
+@include mq("sp"){
+  .l-contact{
+    padding: 80px 0;
+  }
+  
+  .l-contact .wrapper{
+    margin: 0 4%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .l-contact__text-area{
+    width: 100%;
+  }
+  
+  .l-contact__form-area{
+    width: 100%;
+  }
+  
+  
+  .l-contact__button{
+    width: 100%;
+  }
+  
+}

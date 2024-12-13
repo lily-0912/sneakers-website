@@ -1,0 +1,130 @@
+@use "../../global/forwards" as *;
+
+.hamburger-background{
+  width: 100vw;
+  height: 100vh;
+  background-color: $color__sub;
+  z-index: 200;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: .8;
+  transition: opacity .8s, visibility .8s;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.l-header__nav{
+  width: 300px;
+  height: 100vh;
+  padding: 60px 25px 0;
+  background-color: $color__sub;
+  color: $color__sub-text;
+  font-size: $font-size__text;
+  z-index: 400;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  transform: translateX(-700px);
+
+  transition: transform .8s , opacity .8s, visibility .8s;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.l-header__ul{
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.l-header__site-map-li{
+  padding: 20px 0;
+  border-top: 1px solid $color__main;
+}
+
+.l-header__site-map-li:last-child{
+  border-bottom: 1px solid $color__main;
+}
+
+.l-header__sns-map-ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hamburger{
+  width: 30px;
+  height: 23px;
+  position: relative;
+
+  z-index: 300;
+}
+
+.hamburger-border{
+  display: block;
+  background-color: $color__main-text;
+  width: 30px;
+  height: 2px;
+  border-radius: 4px;
+
+  position: absolute;
+  left: 0;
+
+  transition: all 1s;
+}
+
+.hamburger-border--top{
+  top: 0;
+}
+
+.hamburger-border--center{
+  top: 10px;
+}
+
+.hamburger-border--bottom{
+  top: 20px;
+}
+
+.nav-open{
+  .hamburger-background{
+    opacity: 0.8;
+    visibility: visible;
+  }
+
+  .l-header__nav{
+    transform: translateX(0);
+
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hamburger-border{
+    background-color: $color__main;
+  }
+  
+  .hamburger-border--top{
+    top: 10px;
+    transform: rotate(45deg);
+  }
+  
+  .hamburger-border--center{
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  
+  .hamburger-border--bottom{
+    top: 10px;
+    transform: rotate(-45deg);
+  }
+}
+
+@include mq("sp"){
+ 
+}

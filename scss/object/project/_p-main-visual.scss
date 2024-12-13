@@ -1,0 +1,14 @@
+@use "../../global/forwards" as *;
+
+.l-main-visual__video{
+  height: calc(100vh - 80px);
+  width: 100vw;
+  object-fit: cover;
+
+  position: relative;
+  z-index: -100;
+}
+
+@include mq("sp"){
+
+}

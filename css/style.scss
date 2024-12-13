@@ -1,0 +1,48 @@
+@charset "UTF-8";
+// ===============================================================
+// use
+// ===============================================================
+
+// foundation
+// リセットCSS
+@use "../scss/foundation/reset";
+// ベースとなるCSS
+@use "../scss/foundation/base";
+
+// layout
+// ヘッダーCSS
+@use "../scss/layout/l-header";
+// フッターCSS
+@use "../scss/layout/l-footer";
+// セクションCSS
+@use "../scss/layout/l-section";
+// メインビジュアルCSS
+@use "../scss/layout/l-main-visual";
+
+// component
+// 見出しCSS
+@use "../scss/object/component/c-headline";
+// ハンバーガーCSS
+@use "../scss/object/component/c-hamburger";
+
+
+// project
+
+// ヘッダーCSS
+@use "../scss/object/project/p-header";
+// メインビジュアルCSS
+@use "../scss/object/project/p-main-visual";
+// pick upCSS
+@use "../scss/object/project/p-pick-up";
+// featureCSS
+@use "../scss/object/project/p-feature";
+// contactCSS
+@use "../scss/object/project/p-contact";
+// フッターCSS
+@use "../scss/object/project/p-footer";
+
+// utility
+// マージンCSS
+@use "../scss/object/utility/u-margin";
+// パディングCSS
+@use "../scss/object/utility/u-padding";

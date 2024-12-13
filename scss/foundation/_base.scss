@@ -1,0 +1,27 @@
+// common
+@use "../global/forwards" as *;
+
+html{
+  font-size: 14.4px;
+}
+
+body{
+  line-height: 1.7;
+  letter-spacing: 0;
+}
+
+img{
+  width: 100%;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 80px; 
+}
+
+
+@include mq("sp"){
+
+
+}

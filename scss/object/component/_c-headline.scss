@@ -1,0 +1,15 @@
+@use "../../global/forwards" as *;
+
+.section-title{
+  text-align: center;
+  font-size: $font-size__section-title;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+@include mq("sp"){
+  .section-title{
+    font-size: $font-size__sp-section-title;
+    margin-bottom: 20px;
+  }
+}

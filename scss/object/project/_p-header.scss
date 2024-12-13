@@ -1,0 +1,25 @@
+@use "../../global/forwards" as *;
+
+.l-header .wrapper{
+  width: 100%;
+  padding: 20px 2.5%;
+  background-color: $color__main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@include mq("sp"){
+  .l-header .wrapper{
+    width: 100vw;
+    padding: 20px 4%;
+  }
+
+ .site-title{
+  height: 40px;
+ }
+}
